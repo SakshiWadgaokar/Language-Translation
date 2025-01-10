@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LingoSphere</title>
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <div class="header">
+  <h1 class="website-name">LingoSphere</h1>
+ </div>
+  
+  <div class="container">
+    <h1>Translation Tool</h1>
+    
+
+    <div class="form-group">
+      
+      <textarea id="inputText" placeholder="Type text here..."></textarea>
+    </div>
+
+    <!-- Dropdown to select target language -->
+    <div class="form-group">
+      <label for="targetLang">Select Target Language:</label>
+      <select id="targetLang">
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+        <option value="de">German</option>
+        <option value="it">Italian</option>
+        <option value="ja">Japanese</option>
+        <option value="zh">Chinese</option>
+        <option value="hi">Hindi</option> <!-- Hindi option added -->
+      </select>
+    </div>
+
+    <button class="btn" onclick="translateText()">Translate</button>
+    
+    <!-- New button to Speak the Translated Text -->
+    <button class="btn" onclick="speakText()">Speak</button>
+    
+    <div class="output" id="outputText"></div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <h3>Copyright @ Sakshi Wadgaokar</h3>
+</body>
+</html>
